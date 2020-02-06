@@ -1,0 +1,14 @@
+.vscode/
+Library
+Temp
+build
+*.csproj
+*.sln
+Prototypes/WatchOSCSender/TizenUDPSend/TizenUDPSend/obj/
+Prototypes/WatchOSCSender/TizenUDPSend/.vs/
+Prototypes/WatchOSCSender/TizenUDPSend/TizenUDPSend/bin/
+C-Capture Procedure Runner/Test Procedures/
+.vs
+Prototypes/rtcasstrainer/obj/
+C-Capture Procedure Runner/Builds/
+C-Capture Unity Editors/AssetBundles/
