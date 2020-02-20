@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
+
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Brick")
+        if (collision.gameObject.name == "Cube")
         {
             Destroy(collision.gameObject);
         }
