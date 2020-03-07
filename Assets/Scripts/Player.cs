@@ -4,11 +4,30 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+
+  public Animator animator;
+  private bool walk = false;
+  public GameObject go;
+
+
+  void Start()
+  {
+    animator = GetComponent<Animator>();
+  }
+  void Update()
+  {
+    if (Input.GetKeyDown(KeyCode.A))
     {
-        if (collision.gameObject.tag == "Brick")
-        {
-            Destroy(collision.gameObject);
-        }
+      walk = !walk;
+      animator.SetBool("isWalking", walk);
     }
+    
+  }
+  //void OnCollisionEnter(Collision collision)
+  //{
+  //    if (collision.gameObject.tag == "Brick")
+  //    {
+  //        Destroy(collision.gameObject);
+  //    }
+  //}
 }
